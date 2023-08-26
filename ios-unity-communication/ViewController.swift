@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     }
     
     private func setupUI() {
+        UnityManager.shared.delegate = self
+        
         redButton.layer.cornerRadius = redButton.frame.height / 2
         blueButton.layer.cornerRadius = blueButton.frame.height / 2
         greenButton.layer.cornerRadius = greenButton.frame.height / 2
@@ -50,3 +52,16 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController: UnityManagerDelegate {
+    
+    func didButtonPress(message: String) {
+        let unityVC = UnityManager.shared.getUnityRootVC()
+        let alert = UIAlertController(title: "Message From Unity",
+                                      message: message,
+                                      preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        unityVC?.present(alert, animated: true, completion: nil)
+    }
+    
+}

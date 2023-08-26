@@ -14,36 +14,36 @@
 		62F5EF282A9A58510047C7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F5EF272A9A58510047C7A7 /* Assets.xcassets */; };
 		62F5EF2B2A9A58510047C7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F5EF292A9A58510047C7A7 /* LaunchScreen.storyboard */; };
 		62F5EF472A9A5C3E0047C7A7 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F5EF462A9A5C3E0047C7A7 /* UnityManager.swift */; };
-		62F5EF682A9A6C050047C7A7 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F5EF642A9A6BF00047C7A7 /* UnityFramework.framework */; };
-		62F5EF692A9A6C050047C7A7 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62F5EF642A9A6BF00047C7A7 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62F5EF942A9A8FEA0047C7A7 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F5EF912A9A8FE10047C7A7 /* UnityFramework.framework */; };
+		62F5EF952A9A8FEA0047C7A7 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62F5EF912A9A8FE10047C7A7 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		67ED558B1B9506D959BEA4BF /* Pods_ios_unity_communication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7E48FB6D52322F59C2D095 /* Pods_ios_unity_communication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62F5EF5F2A9A6BF00047C7A7 /* PBXContainerItemProxy */ = {
+		62F5EF8C2A9A8FE10047C7A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
 			remoteInfo = "Unity-iPhone";
 		};
-		62F5EF612A9A6BF00047C7A7 /* PBXContainerItemProxy */ = {
+		62F5EF8E2A9A8FE10047C7A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5623C57317FDCB0800090B9E;
 			remoteInfo = "Unity-iPhone Tests";
 		};
-		62F5EF632A9A6BF00047C7A7 /* PBXContainerItemProxy */ = {
+		62F5EF902A9A8FE10047C7A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9D25AB9D213FB47800354C27;
 			remoteInfo = UnityFramework;
 		};
-		62F5EF652A9A6BF00047C7A7 /* PBXContainerItemProxy */ = {
+		62F5EF922A9A8FE10047C7A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7F4E05A02717216D00A2CBE4;
 			remoteInfo = GameAssembly;
@@ -57,7 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				62F5EF692A9A6C050047C7A7 /* UnityFramework.framework in Embed Frameworks */,
+				62F5EF952A9A8FEA0047C7A7 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,8 @@
 		62F5EF2A2A9A58510047C7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62F5EF2C2A9A58510047C7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F5EF462A9A5C3E0047C7A7 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
-		62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "unity-export/Unity-iPhone.xcodeproj"; sourceTree = "<group>"; };
+		62F5EF6B2A9A850B0047C7A7 /* ios-unity-communication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-unity-communication-Bridging-Header.h"; sourceTree = "<group>"; };
+		62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "unity-export-2/Unity-iPhone.xcodeproj"; sourceTree = "<group>"; };
 		7FAD77B45789238DE8CDE6F6 /* Pods-ios-unity-communication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-unity-communication.release.xcconfig"; path = "Target Support Files/Pods-ios-unity-communication/Pods-ios-unity-communication.release.xcconfig"; sourceTree = "<group>"; };
 		8B7E48FB6D52322F59C2D095 /* Pods_ios_unity_communication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_unity_communication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8517B5844ED05FA9DB16C45 /* Pods-ios-unity-communication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-unity-communication.debug.xcconfig"; path = "Target Support Files/Pods-ios-unity-communication/Pods-ios-unity-communication.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67ED558B1B9506D959BEA4BF /* Pods_ios_unity_communication.framework in Frameworks */,
-				62F5EF682A9A6C050047C7A7 /* UnityFramework.framework in Frameworks */,
+				62F5EF942A9A8FEA0047C7A7 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +105,7 @@
 		62F5EF122A9A58500047C7A7 = {
 			isa = PBXGroup;
 			children = (
-				62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */,
+				62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */,
 				62F5EF1D2A9A58500047C7A7 /* ios-unity-communication */,
 				62F5EF1C2A9A58500047C7A7 /* Products */,
 				75D81E77987972147FFDB7AC /* Pods */,
@@ -123,6 +124,7 @@
 		62F5EF1D2A9A58500047C7A7 /* ios-unity-communication */ = {
 			isa = PBXGroup;
 			children = (
+				62F5EF6A2A9A84E50047C7A7 /* Helpers */,
 				62F5EF452A9A5C350047C7A7 /* Managers */,
 				62F5EF1E2A9A58500047C7A7 /* AppDelegate.swift */,
 				62F5EF202A9A58500047C7A7 /* SceneDelegate.swift */,
@@ -143,13 +145,21 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		62F5EF592A9A6BF00047C7A7 /* Products */ = {
+		62F5EF6A2A9A84E50047C7A7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				62F5EF602A9A6BF00047C7A7 /* Unity-Target-New.app */,
-				62F5EF622A9A6BF00047C7A7 /* Unity-iPhone Tests.xctest */,
-				62F5EF642A9A6BF00047C7A7 /* UnityFramework.framework */,
-				62F5EF662A9A6BF00047C7A7 /* libGameAssembly.a */,
+				62F5EF6B2A9A850B0047C7A7 /* ios-unity-communication-Bridging-Header.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		62F5EF862A9A8FE10047C7A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62F5EF8D2A9A8FE10047C7A7 /* Unity-Target-New.app */,
+				62F5EF8F2A9A8FE10047C7A7 /* Unity-iPhone Tests.xctest */,
+				62F5EF912A9A8FE10047C7A7 /* UnityFramework.framework */,
+				62F5EF932A9A8FE10047C7A7 /* libGameAssembly.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +207,7 @@
 				TargetAttributes = {
 					62F5EF1A2A9A58500047C7A7 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -213,8 +224,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 62F5EF592A9A6BF00047C7A7 /* Products */;
-					ProjectRef = 62F5EF582A9A6BF00047C7A7 /* Unity-iPhone.xcodeproj */;
+					ProductGroup = 62F5EF862A9A8FE10047C7A7 /* Products */;
+					ProjectRef = 62F5EF852A9A8FE10047C7A7 /* Unity-iPhone.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -225,33 +236,33 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		62F5EF602A9A6BF00047C7A7 /* Unity-Target-New.app */ = {
+		62F5EF8D2A9A8FE10047C7A7 /* Unity-Target-New.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			name = "Unity-Target-New.app";
 			path = "unity-sample-2.app";
-			remoteRef = 62F5EF5F2A9A6BF00047C7A7 /* PBXContainerItemProxy */;
+			remoteRef = 62F5EF8C2A9A8FE10047C7A7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		62F5EF622A9A6BF00047C7A7 /* Unity-iPhone Tests.xctest */ = {
+		62F5EF8F2A9A8FE10047C7A7 /* Unity-iPhone Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Unity-iPhone Tests.xctest";
-			remoteRef = 62F5EF612A9A6BF00047C7A7 /* PBXContainerItemProxy */;
+			remoteRef = 62F5EF8E2A9A8FE10047C7A7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		62F5EF642A9A6BF00047C7A7 /* UnityFramework.framework */ = {
+		62F5EF912A9A8FE10047C7A7 /* UnityFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = UnityFramework.framework;
-			remoteRef = 62F5EF632A9A6BF00047C7A7 /* PBXContainerItemProxy */;
+			remoteRef = 62F5EF902A9A8FE10047C7A7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		62F5EF662A9A6BF00047C7A7 /* libGameAssembly.a */ = {
+		62F5EF932A9A8FE10047C7A7 /* libGameAssembly.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGameAssembly.a;
-			remoteRef = 62F5EF652A9A6BF00047C7A7 /* PBXContainerItemProxy */;
+			remoteRef = 62F5EF922A9A8FE10047C7A7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -448,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38QYY664D7;
@@ -466,6 +478,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.betulcalik.ios-unity-communication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-unity-communication/Helpers/ios-unity-communication-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38QYY664D7;
@@ -495,6 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.betulcalik.ios-unity-communication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-unity-communication/Helpers/ios-unity-communication-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

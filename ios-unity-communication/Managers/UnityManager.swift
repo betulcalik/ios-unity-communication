@@ -8,10 +8,15 @@
 import Foundation
 import UnityFramework
 
+protocol UnityManagerDelegate: AnyObject {
+    func didButtonPress(message: String)
+}
+
 final class UnityManager: UIResponder, UIApplicationDelegate {
     
     // MARK: - Variables
     static let shared = UnityManager()
+    weak var delegate: UnityManagerDelegate?
     
     private let dataBundleId = "com.unity3d.framework"
     private let frameworkPath = "/Frameworks/UnityFramework.framework"
@@ -46,6 +51,10 @@ final class UnityManager: UIResponder, UIApplicationDelegate {
         self.hostMainWindow = hostMainWindow
     }
     
+    func getUnityRootVC() -> UIViewController! {
+        return unityFramework?.appController().rootViewController
+    }
+    
     /// Send Message to Unity
     func sendMessage(_ objectName: String, methodName: String, message: String) {
         let message: UnityMessage = UnityMessage(
@@ -78,7 +87,7 @@ final class UnityManager: UIResponder, UIApplicationDelegate {
         self.unityFramework?.runEmbedded(withArgc: CommandLine.argc,
                                          argv: CommandLine.unsafeArgv,
                                          appLaunchOpts: launchOptions)
-        
+        NSClassFromString("FrameworkLibAPI")?.registerAPIforNativeCalls(self)
         sendCachedMessages()
     }
     
@@ -139,6 +148,17 @@ extension UnityManager: UnityFrameworkListener {
         unityFramework?.unregisterFrameworkListener(self)
         unityFramework = nil
         hostMainWindow?.makeKeyAndVisible()
+    }
+    
+}
+
+// MARK: - Native Calls Protocol
+extension UnityManager: NativeCallsProtocol {
+    
+    /// Get Message from Unity
+    public func sendMessage(toMobileApp message: String) {
+        print(message)
+        delegate?.didButtonPress(message: message)
     }
     
 }
